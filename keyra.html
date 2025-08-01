@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para mi amor</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+            background-color: #fce4ec;
+            margin: 0;
+            padding: 20px;
+            color: #4a148c;
+            text-align: center;
+        }
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+        }
+        .message-container {
+            margin-bottom: 30px;
+        }
+        .message {
+            font-size: 1.2em;
+            margin: 10px 0;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+            font-family: 'Dancing Script', cursive;
+        }
+        .heart-btn {
+            background-color: #ff80ab;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.5em;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+        }
+        .heart-btn:hover {
+            transform: scale(1.1);
+            background-color: #e91e63;
+        }
+        .signature {
+            margin-top: 20px;
+            font-style: italic;
+            font-size: 1.1em;
+            color: #d81b60;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="message-container">
+            <p class="message" style="animation-delay: 0.3s;">
+                En este día especial, quiero que sepas...
+            </p>
+            <p class="message" style="animation-delay: 0.6s;">
+                Eres la mujer con la que quiero pasar toda la vida.
+            </p>
+            <img src="imagen_novia.png" alt="Mi novia y yo">
+            <button class="heart-btn" id="heartBtn">❤ Haz clic, mi amor</button>
+            <p class="message" style="animation-delay: 0.9s; display: none;" id="hiddenMessage">
+                Te amo todos los días, eres la mujer más hermosa y linda, me encanta cada parte de ti y gracias por hacerme muy feliz 💗.
+            </p>
+            <div class="signature">Para ti, con amor Jhostin</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
